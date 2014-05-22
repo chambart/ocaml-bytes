@@ -1,0 +1,3 @@
+version = "1.0"
+description = "Dummy Bytes module for OCaml >= 4.02"
+

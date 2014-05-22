@@ -1,0 +1,7 @@
+version = "1.0"
+description = "Bytes module for OCaml < 4.02"
+archive(byte) = "bytes.cma"
+archive(byte, plugin) = "bytes.cma"
+archive(native) = "bytes.cmxa"
+archive(native, plugin) = "bytes.cmxs"
+exists_if = "bytes.cma"
