@@ -34,7 +34,10 @@ bytes.cmxs: bytes.cmx
 	$(OCAMLOPT) -shared bytes.cmx -o bytes.cmxs
 
 clean:
-	rm -f bytes.cm{i,o,x,a,xa,xs} bytes.a
+	rm -f bytes.cmi bytes.cmo bytes.cmx bytes.cma bytes.cmxa bytes.cmxs
+
+distclean: clean
+	rm -f config.log config.status Makefile
 
 install: install.@HAS_BYTES@.@OCAMLBEST@
 
