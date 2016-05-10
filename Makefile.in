@@ -34,7 +34,7 @@ bytes.cmxs: bytes.cmx
 	$(OCAMLOPT) -shared bytes.cmx -o bytes.cmxs
 
 clean:
-	rm -f bytes.cmi bytes.cmo bytes.cmx bytes.cma bytes.cmxa bytes.cmxs
+	rm -f bytes.cmi bytes.cmo bytes.cmx bytes.cma bytes.cmxa bytes.cmxs bytes.a bytes.o
 
 distclean: clean
 	rm -f config.log config.status Makefile
@@ -59,4 +59,4 @@ uninstall:
 
 .PHONY: all no.byte no.opt yes.byte yes.opt install \
 	install.META install.no.byte install.yes.byte \
-	install.no.opt install.yes.opt uninstall clean
+	install.no.opt install.yes.opt uninstall clean distclean
